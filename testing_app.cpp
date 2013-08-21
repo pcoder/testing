@@ -19,6 +19,7 @@ class ExampleApplication
             radio_->enable_radio();
 
             debug_->debug( "Hello World from Example Application!\n" );
+            debug_->debug( "Example Application from GitHub!\n" );
 
             radio_->reg_recv_callback<ExampleApplication,
             &ExampleApplication::receive_radio_message>( this );
